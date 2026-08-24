@@ -1,49 +1,41 @@
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import ProjectLog from "./components/ProjectLog.jsx";
+import Footer from './components/Footer'
+import Beams from './components/Beams'
+
 function App() {
-  return(
-      <main>
-        <h1 className="text-4xl font-bold">
-            hi my portfolio is wip
-            <a
-                href="https://www.nyan.cat/"
-                className="opacity-100 hover:opacity-30 transition-opacity duration-200">
-                😼😼😼
-            </a>
-        </h1>
-        <h2>here is some info for now:</h2>
-        <h3>email (UofT):</h3>
-        <code>
-            <a
-                href="mailto:aaronh.wang@mail.utoronto.ca"
-                className="underline text-blue-300 hover:no-underline hover:text-blue-500 transition-colors"
-                target={"_blank"}
-                rel="noopener noreferrer">
-                aaronh.wang@mail.utoronto.ca
-            </a>
-        </code>
-        <h3>email (personal):</h3>
-        <code>
-            <a
-                href="mailto:aaronw4932@gmail.com"
-                className="underline text-blue-300 hover:no-underline hover:text-blue-500 transition-colors"
-                target={"_blank"}
-                rel="noopener noreferrer">
-                aaronw4932@gmail.com
-            </a>
-        </code>
-        <h3>linkedin:</h3>
-        <code>
-            <a
-                href="https://www.linkedin.com/in/aaron-wang-046529318/"
-                className="underline text-blue-300 hover:no-underline hover:text-blue-500 transition-colors"
-                target={"_blank"}
-                rel="noopener noreferrer">
-                click me!
-            </a>
-        </code>
-        <h3>discord (add me if u wanna talk!):</h3>
-        <code>thunderborb.</code>
-      </main>
-  )
+    return (
+        <div className="relative isolate min-h-screen bg-base overflow-hidden">
+            <div className="absolute inset-0 -z-10 opacity-25">
+                <Beams
+                    beamWidth={3}
+                    beamHeight={30}
+                    beamNumber={20}
+                    lightColor="#c5d0ed"
+                    speed={5}
+                    noiseIntensity={1.75}
+                    scale={0.2}
+                    rotation={67}
+                />
+            </div>
+
+            <nav className="w-full bg-base/70 border-b border-line">
+                <div className="px-10 py-4">
+                    <Navbar />
+                </div>
+            </nav>
+
+            <div className="relative px-10 py-12 max-w-2xl mx-auto">
+                <div className="relative">
+                    <div className="absolute -top-10 left-0 w-72 h-72 bg-accent/20 blur-3xl rounded-full -z-10"></div>
+                    <Hero />
+                </div>
+                <ProjectLog />
+                <Footer />
+            </div>
+        </div>
+    );
 }
 
 export default App
