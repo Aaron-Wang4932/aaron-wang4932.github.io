@@ -12,7 +12,6 @@ function Hero() {
             work in progress cause dunno<br/>
             do u like haiku?
         </p>
-
         </>
     )
 }
