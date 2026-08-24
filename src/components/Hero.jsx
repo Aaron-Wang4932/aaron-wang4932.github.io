@@ -5,7 +5,7 @@ function Hero() {
             aaron wang
         </h1>
         <p className="text-base text-text-3 mb-7">
-            aspiring cs guy<span className="select-none"> · </span>terrible gamer<span className="select-none"> · </span>@utsc
+            aspiring cs guy<span className="select-none"> · </span>terrible gamer<span className="select-none"> · </span><a href="https://www.utsc.utoronto.ca/cms/" target="_blank" rel="noopener noreferrer" className="transition hover:underline hover:text-highlight">@utsc</a> cs/math coop '30
         </p>
         <p className="text-base text-text-2 mb-12 max-w-lg leading-relaxed">
             my bio will go here.<br/>
