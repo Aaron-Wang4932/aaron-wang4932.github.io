@@ -5,7 +5,7 @@ function Hero() {
             aaron wang
         </h1>
         <p className="text-base text-text-3 mb-7">
-            aspiring cs guy · terrible gamer · @utsc
+            aspiring cs guy<span className="select-none"> · </span>terrible gamer<span className="select-none"> · </span>@utsc
         </p>
         <p className="text-base text-text-2 mb-12 max-w-lg leading-relaxed">
             my bio will go here.<br/>
